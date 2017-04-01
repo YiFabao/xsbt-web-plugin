@@ -3,7 +3,7 @@ organization  := "com.earldouglas"
 
 name          := "xsbt-web-plugin"
 
-scalaVersion  := "2.10.2"
+scalaVersion  := "2.11.8"
 
 sbtPlugin     := true
 
@@ -15,11 +15,11 @@ publishMavenStyle := false
 licenses          += ("BSD New", url("http://opensource.org/licenses/BSD-3-Clause"))
 
 // scripted-plugin
-ScriptedPlugin.scriptedSettings
+//ScriptedPlugin.scriptedSettings
 
-scriptedBufferLog  := false
+//scriptedBufferLog  := false
 
-scriptedLaunchOpts <+= version { "-Dplugin.version=" + _ }
+//scriptedLaunchOpts <+= version { "-Dplugin.version=" + _ }
 
 watchSources       <++= sourceDirectory map { path => (path ** "*").get }
 
